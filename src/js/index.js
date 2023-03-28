@@ -1,5 +1,4 @@
 import {fetchImages} from './fetchImages';
-import { onScroll, onToTopBtn } from './scroll';
 import axios from 'axios';
 import Notiflix from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
@@ -40,9 +39,6 @@ function renderGallery(images) {
 
 searchForm.addEventListener('submit', onSearchForm);
 loadMoreBtn.addEventListener('click', onLoadMoreBtn);
-
-onScroll();
-onToTopBtn();
 
 function onSearchForm(e) {
   e.preventDefault();
